@@ -1,3 +1,2 @@
 #!/bin/bash
-foo={Name="Holberton"; Value="BETTY"}
-export foo
+export Holberton="BETTY"

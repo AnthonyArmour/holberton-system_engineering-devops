@@ -1,3 +1,2 @@
 #!/bin/bash
-myvar=whoami
-echo hello myvar
+echo hello $USER
