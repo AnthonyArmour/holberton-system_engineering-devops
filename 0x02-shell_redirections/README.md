@@ -1,1 +1,1 @@
-This is a project about redirections.
+//This is a project about redirections.
