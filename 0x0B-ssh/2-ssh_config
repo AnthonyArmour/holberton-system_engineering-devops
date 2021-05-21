@@ -1,0 +1,7 @@
+Host web01
+	 HostName 3.92.27.64
+	 User ubuntu
+	 Port 22
+	 StrictHostKeyChecking no
+	 PasswordAuthentication no
+	 identityFile ~/.ssh/holberton
