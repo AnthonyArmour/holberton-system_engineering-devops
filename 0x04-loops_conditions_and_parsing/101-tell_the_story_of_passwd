@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# prints file contents as story
+file="/etc/passwd"
+x=1
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7
+do
+    printf '%s:%s:%s\n' "$f1" "$f3" "$f6"
+    printf 'The user %s is part of the %s gang, lives in %s' "$f1" "$f4" "$f6"
+    printf " and rides %s. %s's place is protected by the " "$f7" "$f5"
+    printf 'passcode %s, more info about the user here: %s\n' "$f3"
+done <"$file"
