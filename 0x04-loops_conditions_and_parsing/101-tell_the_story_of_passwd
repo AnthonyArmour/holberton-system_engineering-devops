@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # prints file contents as story
 file="/etc/passwd"
-x=1
 while IFS=: read -r f1 f2 f3 f4 f5 f6 f7
 do
     printf 'The user %s is part of the %s gang, lives in %s' "$f1" "$f4" "$f6"
