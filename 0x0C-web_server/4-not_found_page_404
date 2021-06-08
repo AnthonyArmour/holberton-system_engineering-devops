@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#installing nginx
+#installing nginx1
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
