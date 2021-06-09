@@ -2,4 +2,3 @@
 # starts apache server
 
 sudo service apache2 start
-curl localhost:80
