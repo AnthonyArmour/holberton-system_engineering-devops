@@ -28,6 +28,6 @@ elif [ $# -eq 1 ]; then
     sub="web-01"
     printinfo
     var="web-02.$1"
-    sun="web-02"
+    sub="web-02"
     printinfo
 fi
