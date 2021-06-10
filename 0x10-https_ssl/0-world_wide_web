@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# gets domain info
+
+printinfo() {
+    record=$(dig $var | grep -A1 'ANSWER SECTION:' | awk '{print $1, $4, $5}')
+    domain=$(echo $record | awk '{print $2}')
+    rec=$(echo $record | awk '{print $3}')
+    ip=$(echo $record | awk '{print $4}')
+    echo "The subdomain ${sub} is a ${rec} record and points to ${ip}"
+}
+
+if [ $# -eq 3 ]; then
+    var="$2.$1"
+    sub="$2"
+    printinfo
+elif [ $# -eq 2 ]; then
+    var="$1"
+    sub="$2"
+    printinfo
+elif [ $# -eq 1 ]; then
+    var="www.$1"
+    sub="www"
+    printinfo
+    var="lb-01.$1"
+    sub="lb-01"
+    printinfo
+    var="web-01.$1"
+    sub="web-01"
+    printinfo
+    var="web-02.$1"
+    sun="web-02"
+    printinfo
+fi
