@@ -14,7 +14,7 @@ if [ $# -eq 3 ]; then
     sub="$2"
     printinfo
 elif [ $# -eq 2 ]; then
-    var="$1"
+    var="$2.$1"
     sub="$2"
     printinfo
 elif [ $# -eq 1 ]; then
