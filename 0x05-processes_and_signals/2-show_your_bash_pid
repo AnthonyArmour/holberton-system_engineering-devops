@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# filters ps command to bash key word
+ps -ef | grep bash
