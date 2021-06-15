@@ -1,0 +1,1 @@
+# set up mysql master and secondary in web01 and web02
