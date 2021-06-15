@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # kill running proccess 
-ps aux | awk '/4-to_infinity_and_beyond/ {print}'\
-| grep -v "awk" | awk '{print$2}' | xargs kill
+ps aux | awk '/4-to_infinity_and_beyond/ {print}' | grep -v "awk" | awk '{print$2}' | xargs kill
