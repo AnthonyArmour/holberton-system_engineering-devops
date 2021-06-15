@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# backup mysql database with dump
+mysqldump -u root --password="$1" tyrell_corp > dump.sql
+sudo mv dump.sql backup.sql
+d=`date +%m-%d-%Y`
+var='.tar.gz'
+tarfile="$d$var"
+tar -czvf $tarfile ./backup.sql
