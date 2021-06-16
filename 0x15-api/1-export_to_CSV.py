@@ -17,7 +17,7 @@ if __name__ == "__main__":
         csvwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         for dic in todo_dict:
             row.append(str(argv[1]))
-            row.append(str(EMPLOYEE_NAME))
+            row.append(str(dic["username"]))
             row.append(str(dic["completed"]))
             row.append(str(dic["title"]))
             csvwriter.writerow(row)
