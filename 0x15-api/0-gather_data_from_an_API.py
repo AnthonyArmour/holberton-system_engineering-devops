@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""returns information from API"""
+"""returns information from  API"""
 
 if __name__ == "__main__":
     import requests
