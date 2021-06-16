@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# kills process of another script
+pkill -f "`ps aux | awk '/4-to_infinity_and_beyond/ {print}' | grep -v "awk" | awk '{print$11" "$12}'`"
