@@ -2,7 +2,7 @@
 """returns information from  API"""
 
 if __name__ == "__main__":
-    import csv
+    import json
     import requests
     from sys import argv
     todo = 'https://jsonplaceholder.typicode.com/todos/'
@@ -21,5 +21,5 @@ if __name__ == "__main__":
             task_dict["username"] = username
             lst.append(dict(task_dict))
             task_dict.clear()
-        dic = {str(argv[1]): lst}
-        jsonfile.write(str(dic))
+        dic = {argv[1]: lst}
+        jsonfile.write(json.dumps(dic))
