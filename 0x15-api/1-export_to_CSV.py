@@ -12,7 +12,8 @@ if __name__ == "__main__":
         user_dict = requests.get(user, params={"id": argv[1]}).json()
         EMPLOYEE_NAME = user_dict[0].get("name")
     row = []
-    with open("2.csv", 'w+') as csvfile:
+    filecsv = str(argv[1]) + ".csv"
+    with open(filecsv, 'w+') as csvfile:
         csvwriter = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         for dic in todo_dict:
             row.append(str(argv[1]))
