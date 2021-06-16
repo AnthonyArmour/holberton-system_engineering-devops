@@ -2,8 +2,8 @@
 """returns information from API"""
 
 if __name__ == "__main__":
-    from sys import argv
     import requests
+    from sys import argv
     todo = 'https://jsonplaceholder.typicode.com/todos/'
     user = 'https://jsonplaceholder.typicode.com/users/'
     if len(argv) > 1:
