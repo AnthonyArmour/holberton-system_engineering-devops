@@ -9,7 +9,6 @@ if __name__ == "__main__":
     user = 'https://jsonplaceholder.typicode.com/users/'
     todo_dict = requests.get(todo).json()
     user_dict = requests.get(user).json()
-    # user_dict = requests.get(user, params={"id": argv[1]}).json()
     final_dic = {}
     task_dict = {}
     with open('todo_all_employees.json', 'w+') as jsonfile:
