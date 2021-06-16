@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# kills process of another script
+kill -9 "$(ps aux | awk '/7-highlander/ {print}' | grep -v "awk" | awk '{print$2}')"
